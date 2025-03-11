@@ -262,7 +262,7 @@ $usuarios = $userService->getAllUsers();
                     <div class="row">
                         <div class="col-lg-12">
                             <h1 class="page-header">Lista de Usuarios Registrados</h1>
-                            <h1 class="page-header">Mensaje para probar el cambio y subirlo al repositorio 1</h1>
+                           
                             <a href="create.php" title="Agregar nuevo usuario" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addUserModal">Nuevo</a>
                         </div>
                     </div>

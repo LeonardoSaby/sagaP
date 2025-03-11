@@ -3,7 +3,7 @@
 class Database
 {
     private $host = 'localhost';
-    private $port = '3306'; // Puerto personalizado
+    private $port = '3310'; // Puerto personalizado
     private $db_name = 'incos_saga';
     private $username = 'root';
     private $password = '';
