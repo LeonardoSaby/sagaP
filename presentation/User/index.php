@@ -42,7 +42,10 @@ a {
 
 .user-card{
     margin-top: 30px;
-
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px; 
 }
 a:hover {
     text-decoration: underline;

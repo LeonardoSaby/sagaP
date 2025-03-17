@@ -27,63 +27,100 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        * { margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: Arial, sans-serif; }
         body {
             background: url('fondo.jpg') no-repeat center center/cover;
-            display: flex; justify-content: center; align-items: center;
-            height: 100vh; backdrop-filter: blur(5px);
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            height: 100vh; 
+            backdrop-filter: blur(5px);
         }
         .container {
-            display: flex; background: rgba(108, 175, 217, 0.9);
-            padding: 20px; border-radius: 10px;
+            display: flex; 
+            background: rgba(108, 175, 217, 0.9);
+            padding: 20px; 
+            border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-            width: 600px; height: 300px;
+            width: 700px; 
+            height: 300px;
         }
         .login-container {
-            flex: 1; background: #6cafd9;
-            padding: 20px; border-radius: 10px;
-            color: #011126; border: 1px solid #023059;
+            flex: 1; 
+            background: #6cafd9;
+            padding: 20px; 
+            border-radius: 10px;
+            color: #011126; 
+            border: 1px solid #023059;
         }
-        .login-container h2 { margin-bottom: 15px; font-size: 22px; text-align: center; }
-        .input-group { margin-bottom: 15px; }
-        .input-group label { display: block; font-size: 14px; margin-bottom: 5px; }
+        .login-container h2 {
+            margin-bottom: 15px; 
+            font-size: 22px; 
+            text-align: center; 
+        }
+        .input-group {
+             margin-bottom: 15px; 
+        }
+        .input-group label { 
+            display: block; 
+            font-size: 14px; 
+            margin-bottom: 5px; 
+        }
         .input-group input {
-            width: 100%; padding: 10px;
-            border: none; border-radius: 5px;
-            background-color: #034c8c; color: #f0f0f0;
+            width: 100%; 
+            padding: 10px;
+            border: none; 
+            border-radius: 5px;
+            background-color: #034c8c; 
+            color: #f0f0f0;
         }
         .login-btn {
             width: 100%; padding: 10px;
-            background: #023059; border: none;
-            border-radius: 5px; font-size: 16px;
-            cursor: pointer; color: #f0f0f0;
+            background: #023059; 
+            border: none;
+            border-radius: 5px; 
+            font-size: 16px;
+            cursor: pointer; 
+            color: #f0f0f0;
         }
         .welcome-container {
-            flex: 1; display: flex; flex-direction: column;
-            justify-content: center; align-items: center;
+            flex: 1; display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
             color: #011126; padding: 20px;
         }
-        .welcome-container h2{
-            border-bottom: 1px solid #023059;
-
+        .welcome-container h2 {
+            border-bottom: 2px solid #023059;
+            text-align: center;
+            width: 100%;
+            padding-bottom: 10px;
         }
-        .welcome-container p{
-            border-bottom: 1px solid #023059;
-            margin-bottom: 10px;
+        .welcome-container p {
+
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        .fant{
+            border-bottom: 2px solid #023059;
+            width: 300px;
+            margin-bottom: 10px
         }
         .links {
             font-size: 14px;
             text-align: center;
             margin-top: 10px;
-         }
+        }
         .links a {
             color: #011126;
             text-decoration: none;
-              
-         }
+        }
         .links a:hover {
             text-decoration: underline; 
-            }
+        }
     </style>
     
 </head>
@@ -112,6 +149,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h2>Bienvenido</h2>
             <div class="links">
                 <p>¿Perdiste tu contraseña?<br>¿No tienes cuenta? <a href="#">Regístrate</a></p>
+                <div class="fant"></div>
                 <a href="#">&laquo; Volver</a>
             </div>
         </div>
