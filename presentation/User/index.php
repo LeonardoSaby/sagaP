@@ -40,6 +40,10 @@ a {
     text-decoration: none;
 }
 
+.user-card{
+    margin-top: 30px;
+
+}
 a:hover {
     text-decoration: underline;
 }
@@ -78,7 +82,7 @@ a:hover {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-home"></i> Website</a>
+                        <a class="nav-link" href="#"><i class="fa fa-home"></i> Sitio Web</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -104,9 +108,9 @@ a:hover {
                     <div class="col-md-4">
                         <div class="user-card">
                             <h5><?php echo htmlspecialchars($usuario['username']); ?></h5>
-                            <p><strong>Email:</strong> <?php echo htmlspecialchars($usuario['password']); ?></p>
-                            <p><strong>Estado:</strong> <?php echo htmlspecialchars($usuario['estado']); ?></p>
-                            <p><strong>Fecha de Registro:</strong> <?php echo htmlspecialchars($usuario['fecha_registro']); ?></p>
+                            <p><strong>Contraseña: </strong> <?php echo htmlspecialchars($usuario['password']); ?></p>
+                            <p><strong>Estado: </strong> <?php echo htmlspecialchars($usuario['estado']); ?></p>
+                            <p><strong>Fecha de Registro: </strong> <?php echo htmlspecialchars($usuario['fecha_registro']); ?></p>
                             <div class="user-actions">
                                 <a href="edit.php?id=<?php echo htmlspecialchars($usuario['id']); ?>" class="btn btn-primary btn-sm">Editar</a>
                                 <a href="details.php?id=<?php echo htmlspecialchars($usuario['id']); ?>" class="btn btn-info btn-sm">Ver</a>

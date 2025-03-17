@@ -35,16 +35,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../public/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        .form-container {
-            background-color: #ffffff;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
+         body {
+    background-color: #011126; /* Fondo principal */
+    color: #6CAFD9; /* Texto principal */
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3 {
+    color: #034C8C; /* Color de encabezados */
+}
+
+a {
+    color: #84B8D9; /* Color de enlaces */
+    text-decoration: none;
+}
+
+.user-card{
+    margin-top: 30px;
+
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: #023059; /* Fondo de botones primarios */
+    border-color: #023059;
+}
+
+.btn-primary:hover {
+    background-color: #034C8C;
+    border-color: #034C8C;
+}
+
+.navbar {
+    background-color: #023059 !important;
+}
+
+.navbar a {
+    color: #6CAFD9 !important;
+}
+
+    </style>
     </style>
 </head>
 
