@@ -20,7 +20,7 @@ class UserService
         //echo("clave del usuario");
         //var_dump($user["password"]);
         //if ($user && password_verify($password, $user['password'])) 
-        if ($password = $user['password']){
+        if ($user && $password === $user['password']) {
         //echo "el contenido de usuario ciclo:";
         //var_dump($user);
         //var_dump($user['user_id']);
