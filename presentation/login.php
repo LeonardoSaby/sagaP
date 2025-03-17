@@ -63,10 +63,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             justify-content: center; align-items: center;
             color: #011126; padding: 20px;
         }
-        .links { font-size: 14px; text-align: center; margin-top: 10px; }
-        .links a { color: #011126; text-decoration: none; }
-        .links a:hover { text-decoration: underline; }
+        .welcome-container h2{
+            border-bottom: 1px solid #023059;
+
+        }
+        .welcome-container p{
+            border-bottom: 1px solid #023059;
+            margin-bottom: 10px;
+        }
+        .links {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 10px;
+         }
+        .links a {
+            color: #011126;
+            text-decoration: none;
+              
+         }
+        .links a:hover {
+            text-decoration: underline; 
+            }
     </style>
+    
 </head>
 <body>
     <div class="container">
@@ -79,8 +98,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <?php endif; ?>
             <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                 <div class="input-group">
-                    <label for="email">Correo</label>
-                    <input type="text" id="email" name="email" placeholder="Correo" required>
+                    <label for="email">Usuario</label>
+                    <input type="text" id="email" name="email" placeholder="Usuario" required>
                 </div>
                 <div class="input-group">
                     <label for="password">Contraseña</label>
@@ -93,9 +112,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h2>Bienvenido</h2>
             <div class="links">
                 <p>¿Perdiste tu contraseña?<br>¿No tienes cuenta? <a href="#">Regístrate</a></p>
-                <p><a href="#">&laquo; Volver</a></p>
+                <a href="#">&laquo; Volver</a>
             </div>
         </div>
     </div>
 </body>
+
 </html>
+
